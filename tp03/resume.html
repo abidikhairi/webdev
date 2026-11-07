@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume — Sara Benali</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <!-- ===== Header ===== -->
+  <h1>Sara Benali</h1>
+  <img src="me.jpg" alt="Portrait of Sara Benali" width="160">
+  <p>
+    First-year Computer Science student at the University of Algiers.<br>
+    Curious, organised, and currently learning web development.
+  </p>
+
+  <!-- ===== About ===== -->
+  <h2>About me</h2>
+  <p>I enjoy solving problems and turning ideas into things people can use.</p>
+
+  <!-- ===== Skills table ===== -->
+  <h2>Skills</h2>
+  <table>
+    <caption>My skills</caption>
+    <thead>
+      <tr><th>Skill</th><th>Level</th><th>Years</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>HTML</td><td>Intermediate</td><td>1</td></tr>
+      <tr><td>Problem solving</td><td>Advanced</td><td>4</td></tr>
+      <tr><td>French</td><td>Fluent</td><td>15</td></tr>
+      <tr><td>English</td><td>Good</td><td>8</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ===== Timetable (colspan + rowspan) ===== -->
+  <h2>Weekly timetable</h2>
+  <table>
+    <caption>Semester 1 — typical week</caption>
+    <thead>
+      <tr><th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>08:30</th>
+        <td rowspan="2">Algorithms (lecture, 3h)</td>
+        <td>Web development</td>
+        <td>Mathematics</td>
+      </tr>
+      <tr>
+        <th>10:30</th>
+        <td>Coding club</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <th>13:00</th>
+        <td colspan="3">Lunch break and tutoring</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- ===== Education ===== -->
+  <h2>Education</h2>
+  <ol>
+    <li>2026 — present: BSc Computer Science, University of Algiers</li>
+    <li>2025 — 2026: Baccalaureate, Lycée Ibn Rochd (with honours)</li>
+  </ol>
+
+  <!-- ===== Contact form ===== -->
+  <h2>Contact me</h2>
+  <form action="#" method="post">
+    <p>
+      <label for="name">Your name:</label><br>
+      <input type="text" id="name" name="name" required>
+    </p>
+    <p>
+      <label for="email">Your email:</label><br>
+      <input type="email" id="email" name="email" required>
+    </p>
+    <p>
+      <label for="subject">Subject:</label><br>
+      <select id="subject" name="subject">
+        <option value="job">Job offer</option>
+        <option value="project">Project</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+    <p>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40" required></textarea>
+    </p>
+    <button type="submit">Send message</button>
+  </form>
+
+</div>
+</body>
+</html>

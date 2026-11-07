@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event registration</title>
+</head>
+<body>
+  <h1>Student event — registration</h1>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <legend>About you</legend>
+      <p>
+        <label for="n">Full name</label><br>
+        <input type="text" id="n" name="name" required>
+      </p>
+      <p>
+        <label for="e">Email</label><br>
+        <input type="email" id="e" name="email" required>
+      </p>
+      <p>
+        <label for="b">Birth date</label><br>
+        <input type="date" id="b" name="birth">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your event</legend>
+      <p>
+        <label for="w">Workshop</label><br>
+        <select id="w" name="workshop">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="git">Git</option>
+        </select>
+      </p>
+      <p>
+        Day:<br>
+        <input type="radio" id="sat" name="day" value="saturday" checked>
+        <label for="sat">Saturday</label>
+        <input type="radio" id="sun" name="day" value="sunday">
+        <label for="sun">Sunday</label>
+      </p>
+      <p>
+        Meals:<br>
+        <input type="checkbox" id="lu" name="meal" value="lunch">
+        <label for="lu">Lunch</label>
+        <input type="checkbox" id="di" name="meal" value="dinner">
+        <label for="di">Dinner</label>
+      </p>
+    </fieldset>
+
+    <p>
+      <label for="q">Questions</label><br>
+      <textarea id="q" name="questions" rows="4" cols="40"></textarea>
+    </p>
+
+    <p>
+      <input type="checkbox" id="ok" name="ok" required>
+      <label for="ok">I accept the rules</label>
+    </p>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+</body>
+</html>
